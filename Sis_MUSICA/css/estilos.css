@@ -1,0 +1,118 @@
+body {
+    background-image: url('../../imagenes/fondo_musica.jpg');
+    width: 100%;
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la pantalla */
+    background-attachment: fixed; /* Fija la imagen de fondo al fondo de la pantalla */
+}
+
+h1 {
+    color: #01FFFF; /* Color del título */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h2 {
+    color: #01FFFF; 
+    text-align: center;
+}
+/* Estilo para la cabecera con degradado vertical */
+.cabecera {
+    background: linear-gradient(180deg, #07091E, #0a1f31); /* Degradado de arriba hacia abajo (vertical) */
+    color: #ffffff; /* Texto blanco */
+    padding: 15px; /* Espaciado interno */
+    display: flex; /* Flexbox para alineación */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Espacia el logo y el usuario */
+    font-family: 'Roboto', sans-serif; /* Letra moderna */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* Estilo para el título dentro de la cabecera */
+.titulo {
+    font-size: 50px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    color: #01FFFF; /* Color celeste */
+    margin-left: 15px; /* Margen izquierdo para separar del logo */
+    font-family: 'Montserrat', sans-serif; /* Otra opción de letra moderna */
+    flex: 1; /* Permite que el título ocupe espacio disponible */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el nombre de usuario */
+.usuario {
+    font-size: 18px; /* Tamaño del texto */
+    color: #01FFFF; /* Color celeste */
+    margin-left: 15px; /* Espaciado desde el título */
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+}
+
+/* Botón de cierre de sesión */
+.boton_cerrar {
+    background-color: #01FFFF; /* Fondo celeste */
+    color: #07091E; /* Texto oscuro */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease; /* Transición suave */
+    font-family: 'Roboto', sans-serif; /* Letra moderna */
+}
+
+.boton_cerrar:hover {
+    background-color: #008fb3; /* Oscurece al pasar el ratón */
+}
+
+/* Estilo para el botón de nueva persona */
+.nuevo-boton {
+    background-color: #01FFFF; /* Fondo celeste */
+    color: #07091E; /* Texto oscuro */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Permite que el botón se comporte como un botón */
+    font-family: 'Roboto', sans-serif; /* Letra moderna */
+    font-size: 18px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+    margin: 20px 0; /* Margen superior e inferior para separación, 0 a los lados */
+    text-align: center; /* Centra el texto */
+}
+
+
+/* Efecto hover para el botón de nueva persona */
+.nuevo-boton:hover {
+    background-color: #008fb3; /* Oscurece al pasar el ratón */
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 32px; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    .usuario {
+        font-size: 16px; /* Reduce el tamaño del texto para el usuario */
+        margin-top: 10px; /* Añade espacio superior en pantallas pequeñas */
+    }
+
+    .cabecera {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .boton_cerrar {
+        margin-top: 10px; /* Añade espacio superior al botón en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 28px; /* Reduce aún más el tamaño del título en pantallas muy pequeñas */
+    }
+
+    .usuario {
+        font-size: 14px; /* Ajusta el tamaño del texto para el usuario */
+    }
+}

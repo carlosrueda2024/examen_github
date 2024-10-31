@@ -1,0 +1,50 @@
+.botoon {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none;
+  color: rgb(0, 0, 0); /* Color del texto */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, padding 0.3s, font-size 0.3s;
+}
+
+/* Estilo para el botón regresar */
+.botoon-regresar {
+  background-color: #00f5fd; /* Color de fondo específico */
+}
+
+/* Icono de la casita */
+.icono-casita {
+  content: "\25C0"; /* Código Unicode de la casita */
+  margin-right: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .botoon {
+    font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    padding: 8px 16px; /* Menos espaciado en pantallas pequeñas */
+  }
+
+  .botoon-regresar {
+    background-color: #00d1e0; /* Color de fondo ajustado para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .botoon {
+    font-size: 12px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+    padding: 6px 12px; /* Menos espaciado en pantallas muy pequeñas */
+    width: 100%; /* Botones a ancho completo en pantallas muy pequeñas */
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+  }
+
+  .botoon-regresar {
+    background-color: #00b0b4; /* Color de fondo aún más ajustado para pantallas muy pequeñas */
+  }
+}

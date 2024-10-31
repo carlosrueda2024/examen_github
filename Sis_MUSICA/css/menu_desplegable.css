@@ -1,0 +1,114 @@
+/* Estilos base del menú */
+#header {
+  margin-left: 0%;
+  width: 150px; /* Ancho del menú lateral */
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5px; /* Espaciado interno superior */
+  margin-top: 5px; /* Añade margen superior para empujar el menú hacia abajo */
+}
+
+ul,
+ol {
+  list-style: none; /* Quitar estilos de lista */
+  margin: 0; /* Eliminar márgenes por defecto */
+  padding: 0; /* Eliminar padding por defecto */
+}
+
+.nav > li {
+  position: relative; /* Contexto de posicionamiento */
+}
+
+.nav li a {
+  background-color: #07091E; /* Color de fondo del enlace */
+  color: #fff; /* Color del texto del enlace */
+  text-decoration: none; /* Sin subrayado */
+  padding: 10px 12px; /* Espaciado interno */
+  display: block; /* Bloque completo */
+  transition: transform 0.3s, box-shadow 0.3s, font-size 0.3s; /* Transiciones suaves */
+  min-width: 160px; /* Ancho mínimo */
+  border: 2px solid #00ffff; /* Borde */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.nav li a:hover {
+  background-color: #01ffff;
+  color: #000;
+  transform: perspective(400px) rotateY(10deg) scale(1.05); /* Efecto 3D */
+  box-shadow: 0 0 10px rgb(255, 255, 255); /* Sombra */
+  font-size: 1.1em; /* Tamaño de fuente */
+}
+
+.nav > li {
+  display: inline-block; /* Cambiamos a inline-block para colocar los elementos en línea */
+}
+
+.nav li ul {
+  position: absolute; /* Cambiamos a absolute para posicionar al lado del menú principal */
+  top: 0; /* Alineación arriba */
+  left: 100%; /* Alineación a la derecha del menú principal */
+  display: none; /* Oculta submenús por defecto */
+  padding-left: 2px; /* Espaciado interno para submenús */
+  background-color: #07091E; /* Fondo para el submenú */
+}
+
+.nav li:hover > ul {
+  display: block; /* Muestra submenús al pasar el mouse sobre el ítem */
+}
+
+/* Media query para menú responsive */
+@media screen and (max-width: 768px) {
+  #header {
+    width: 50%; /* Menú ocupa todo el ancho */
+    padding-top: 0; /* Ajuste de padding */
+    margin-top: 20px; /* Añade margen superior para empujar el menú hacia abajo */
+  }
+
+  .nav {
+    display: none; /* Ocultar menú normal */
+  }
+
+  /* Estilo del menú hamburguesa */
+  .menu-toggle {
+    display: block; /* Mostrar toggle */
+    cursor: pointer;
+    width: 30px;
+    margin: 10px 20px;
+    margin-top: 20px; /* Añade margen superior para empujar el botón hacia abajo */
+  }
+
+  .menu-toggle .bar {
+    width: 100%; /* Ancho de las barras */
+    height: 3px; /* Altura de las barras */
+    background-color: #fff; /* Color de las barras */
+    margin: 5px 0; /* Margen de las barras */
+    transition: background-color 0.3s; /* Transición suave */
+  }
+
+  .menu-toggle.active .bar {
+    background-color: #01ffff; /* Color al activar */
+  }
+
+  .nav.active {
+    display: block; /* Mostrar menú al activar */
+    width: 100%; /* Ancho completo */
+  }
+
+  .nav > li {
+    display: block; /* Bloques */
+    width: 100%; /* Ancho completo */
+  }
+
+  .nav li a {
+    padding: 10px 20px; /* Ajuste de espaciado interno */
+  }
+
+  .nav li ul {
+    position: static; /* Posicionamiento estático */
+    display: none; /* Ocultar submenú por defecto */
+    padding-left: 0px; /* Espaciado interno para submenú */
+  }
+
+  .nav.active li:hover > ul {
+    display: block; /* Mostrar submenú cuando se pasa el mouse sobre el ítem */
+  }
+}

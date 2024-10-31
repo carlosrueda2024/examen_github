@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../imagenes/fondo_musica.jpg');
+    background-size: cover;
+    opacity: 1;
+}
+
+.banner {
+    background-image: linear-gradient(to bottom, #333, #001C2A);
+    color: #01FFFF;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.botoon-regresar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botoon-regresar:hover {
+    background-color: #01FFFF;
+    color: #333;
+
+}
+
+.formu_ingreso {
+    background-image: linear-gradient(to bottom, #333, #001C2A);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #01FFFF;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.boton{
+    font-size: 16px;
+}
+
+
+.formu_ingreso h2 {
+    margin: 0 0 10px;
+    color: #01FFFF;
+    font-size: 16px;
+}
+
+.formu_ingreso input[type="text"],
+.formu_ingreso input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #01FFFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #002130; /* Cambia el color de fondo del input */
+    color: #fff; /* Cambia el color del texto dentro del input */
+}
+
+.formu_ingreso input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formu_ingreso input[type="submit"]:hover {
+    background-color: #01FFFF;
+    color: #333;
+}
