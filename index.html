@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Música</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Página de Música</h1>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Álbumes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="Sis_MUSICA/index.php">Privado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="albumes">
+        <h2>Artistas Destacados</h2>
+    </section>
+    <section id="destacados">
+        <div class="artista">
+            <img src="imagenes/Shakira.jpeg" alt="SHAKIRA">
+            <p>SHAKIRA</p>
+        </div>
+        <div class="artista">
+            <img src="imagenes/becerra.jpg" alt="MARIA BECERRA">
+            <p>MARIA BECERRA</p>
+        </div>
+        <div class="artista">
+            <img src="imagenes/Karol.jpg" alt="KAROL G">
+            <p>KAROL G</p>
+        </div>
+    </section>
+    <section id="albumes">
+        <h2>Últimos Álbumes</h2>
+        <!-- Aquí puedes añadir información sobre los últimos álbumes -->
+    </section>
+    <footer>
+        <p>Derechos de autor Carlos Rueda © 2024 Mi Página de Música</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
